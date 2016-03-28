@@ -31,10 +31,45 @@
       "type": "composer",
       "url": "https://wpackagist.org"
     },
-   {
-      "type": "vcs",
-      "url": "git@bitbucket.org:osynligab/osynlig-wordpress-theme.git"
-    }
+      {
+        "type"    : "package",
+        "package" : {
+            "name"    : "osynligab/osynlig-wordpress-theme",
+            "version" : "master",
+            "type"    : "wordpress-theme",
+            "source"  : {
+                "url"       : "git@bitbucket.org:osynligab/osynlig-wordpress-theme.git",
+                "type"      : "git",
+                "reference" : "master"
+            }
+        }
+      },
+      {
+        "type"    : "package",
+        "package" : {
+            "name"    : "osynligab/wordpress-advanced-custom-fields",
+            "version" : "master",
+            "type"    : "wordpress-plugin",
+            "source"  : {
+                "url"       : "git@bitbucket.org:osynligab/wordpress-advanced-custom-fields.git",
+                "type"      : "git",
+                "reference" : "master"
+            }
+        }
+      },
+       {
+        "type"    : "package",
+        "package" : {
+            "name"    : "osynligab/wordpress-gravity-forms",
+            "version" : "master",
+            "type"    : "wordpress-plugin",
+            "source"  : {
+                "url"       : "git@bitbucket.org:osynligab/wordpress-gravity-forms.git",
+                "type"      : "git",
+                "reference" : "master"
+            }
+        }
+      }
   ],
   "require": {
     "php": ">=5.5",
@@ -43,7 +78,13 @@
     "johnpbloch/wordpress": "4.4.2",
     "oscarotero/env": "^1.0",
     "roots/wp-password-bcrypt": "1.0.0",
-    "osynligab/osynlig-wordpress-theme":"dev-master"
+    "osynligab/osynlig-wordpress-theme":"dev-master",
+    "osynligab/wordpress-gravity-forms":"dev-master",
+    "osynligab/wordpress-advanced-custom-fields":"dev-master",
+    "wpackagist-plugin/wordpress-seo": "3.1.2",
+    "wpackagist-plugin/regenerate-thumbnails": "2.2.6",
+    "wpackagist-plugin/wp-super-cache": "1.4.8",
+    "wpackagist-plugin/tinymce-advanced": "4.2.8"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
